@@ -1,0 +1,20 @@
+
+class SchoolUser:
+    def get_role(self):
+        print("I am a school user.")
+
+class Student(SchoolUser):
+    def get_role(self):
+        print("I am a student.")
+
+class Teacher(SchoolUser):
+    def get_role(self):
+        print("I am a teacher.")
+
+student = Student()
+teacher = Teacher()
+
+users = [student, teacher]
+
+for user in users:
+    user.get_role()
