@@ -1,0 +1,21 @@
+browser_stack = []
+
+browser_stack.append("https://www.google.com")
+browser_stack.append("https://www.youtube.com")
+browser_stack.append("https://www.wikipedia.org")
+browser_stack.append("https://www.github.com")
+
+print("Current browser stack:")
+print(browser_stack)
+
+browser_stack.pop()
+print("After clicking Back once:")
+print(browser_stack)
+
+browser_stack.pop()
+print("After clicking Back twice:")
+print(browser_stack)
+
+current_website = browser_stack[-1]
+print("Current website:")
+print(current_website)
